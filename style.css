@@ -10,6 +10,10 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
+  opacity: 0;
+  filter: blur(5px);
+}
+.bg-img.inview {
   animation-name: kf-img-animation;
   animation-delay: 0s;
   animation-duration: 3s;
@@ -19,7 +23,6 @@
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-play-state: running;
-  filter: blur(5px);
 }
 .bg-img::before {
   content: "";
@@ -34,7 +37,7 @@
 @keyframes kf-img-animation {
   0% {
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(10px);
   }
   100% {
     opacity: 1;
@@ -48,6 +51,7 @@
   transform: translate(-50%, -50%);
   font-size: 2em;
   color: white;
+  opacity: 0;
 }
 .animate-title.inview {
   opacity: 1;
@@ -439,4 +443,24 @@
     opacity: 1;
     transform: scale(100%);
   }
+}
+.btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.2rem outset pink;
+  outline: 0.1rem solid khaki;
+  border-radius: 50px;
+  font: 1rem sans-serif;
+  margin: 2rem;
+  padding: 1em 3em;
+  background-color: rgba(243, 234, 234, 0.5);
+  box-shadow: 5px 5px 0 0 rgb(47, 49, 50);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgba(254, 221, 226, 0.5);
+  color: white;
+  box-shadow: none;
 }/*# sourceMappingURL=style.css.map */
