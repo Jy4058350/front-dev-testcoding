@@ -12,7 +12,7 @@
   background-position: center;
   animation-name: kf-img-animation;
   animation-delay: 0s;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: 1;
@@ -34,7 +34,7 @@
 @keyframes kf-img-animation {
   0% {
     opacity: 0;
-    filter: blur(3px);
+    filter: blur(5px);
   }
   100% {
     opacity: 1;
@@ -247,6 +247,7 @@
   transform: translate(-50%, -50%);
   font-size: 4em;
   color: rgb(241, 225, 236);
+  opacity: 0;
 }
 .animate-title2.inview {
   opacity: 1;

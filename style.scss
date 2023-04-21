@@ -12,9 +12,9 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
-  @include animation($name: kf-img-animation, $duration: 4s);
+  @include animation($name: kf-img-animation, $duration: 3s);
 
-  filter: blur(5px); 
+  filter: blur(5px);
 
   &::before {
     content: "";
@@ -24,18 +24,13 @@
     right: 0;
     position: absolute;
     background-color: rgba(20, 18, 20, 0.214);
-    
-    
-
-    
   }
-  
 }
 
 @keyframes kf-img-animation {
   0% {
     opacity: 0;
-    filter: blur(3px);
+    filter: blur(5px);
   }
   100% {
     opacity: 1;
@@ -88,6 +83,7 @@
   transform: translate(-50%, -50%);
   font-size: 4em;
   color: rgb(241, 225, 236);
+  opacity: 0;
 
   &.inview {
     opacity: 1;
