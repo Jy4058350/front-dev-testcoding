@@ -1,0 +1,22 @@
+@mixin animation(
+  $name,
+  $duration: 2s,
+  $timing-function: ease-in-out,
+  $delay: 0s,
+  $iteration-count: 1,
+  $direction: normal,
+  $fill-mode: forwards,
+  $play-state: running
+) {
+  animation: {
+    name: $name;
+    delay: $delay;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+    iteration-count: $iteration-count;
+    direction: $direction;
+    fill-mode: $fill-mode;
+    play-state: $play-state;
+  }
+}

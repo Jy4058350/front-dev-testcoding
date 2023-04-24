@@ -1,0 +1,149 @@
+@use "mixin" as *;
+
+#container {
+  position: relative;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.bg-img {
+  background-image: url("../images/AdobeStock_178658489.jpeg");
+  background-color: transparent;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+
+  &.inview {
+    @include animation($name: kf-img-animation, $duration: 3s);
+  }
+
+  filter: blur(5px);
+
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(20, 18, 20, 0.214);
+  }
+}
+
+@keyframes kf-img-animation {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.animate-title,
+.gsap-animate-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: white;
+  opacity: 0;
+
+  &.inview {
+    opacity: 1;
+
+    & .char {
+      display: inline-block;
+    }
+  }
+}
+
+.animate-title.inview .char {
+  @include animation(
+    $name: kf-animation-chars,
+    $duration: 0.6s,
+    $fill-mode: both
+  );
+  @for $i from 1 through 55 {
+    &:nth-child(#{$i}) {
+      animation-delay: $i * 0.03s;
+    }
+  }
+}
+
+@keyframes kf-animation-chars {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+// .gsap-animate-title {
+//   position: absolute;
+//   top: 60%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   font-size: 4em;
+//   color: rgb(241, 225, 236);
+//   opacity: 0;
+
+//   &.inview {
+//     opacity: 1;
+
+//     & .char {
+//       display: inline-block;
+
+//       @include animation(
+//         $name: kf-animation-chars2,
+//         $duration: 3s,
+//         $fill-mode: both
+//       );
+//       @for $i from 1 through 55 {
+//         &:nth-child(#{$i}) {
+//           animation-delay: $i * 0.03s;
+//         }
+//       }
+//     }
+//   }
+// }
+
+@keyframes kf-animation-chars2 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+
+.btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 0.2rem outset pink;
+  outline: 0.1rem solid khaki;
+  border-radius: 50px;
+  font: 1rem sans-serif;
+  margin: 2rem;
+  padding: 1em 3em;
+  background-color: rgba(243, 234, 234, 0.5);
+  box-shadow: 5px 5px 0 0 rgb(47, 49, 50);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(254, 221, 226, 0.5);
+    color: white;
+    box-shadow: none;
+    // transform: translate(1px);
+  }
+}
