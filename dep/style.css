@@ -2,6 +2,8 @@
   position: relative;
   height: 100vh;
   background-color: transparent;
+  overflow: hidden;
+  margin-top: 500px;
 }
 #container:nth-child(2) {
   background-color: rgba(209, 237, 209, 0.3);
@@ -349,4 +351,11 @@
   background-color: rgba(254, 221, 226, 0.5);
   color: white;
   box-shadow: none;
+}
+
+.index {
+  background-color: #151313;
+  font-size: 60px;
+  line-height: 50px;
+  color: #f3eeee;
 }/*# sourceMappingURL=style.css.map */

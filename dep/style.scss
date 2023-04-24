@@ -4,6 +4,8 @@
   position: relative;
   height: 100vh;
   background-color: transparent;
+  overflow:hidden;
+ margin-top: 500px;
 
   &:nth-child(2) {
     background-color: rgba(209, 237, 209, 0.3);
@@ -205,4 +207,12 @@
     box-shadow: none;
     // transform: translate(1px);
   }
+}
+
+.index {
+  
+  background-color: #151313;
+  font-size: 60px;
+  line-height: 50px;
+  color: #f3eeee;
 }
