@@ -5,7 +5,7 @@ const tl = gsap.timeline(),
   chars = mySplitText.chars; //an array of all the divs that wrap each character
 
 
-console.log(chars);
+// console.log(chars);
 
 tl.from(chars, {
   duration: 0.8,
