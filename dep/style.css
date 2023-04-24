@@ -3,9 +3,15 @@
   height: 100vh;
   background-color: transparent;
 }
+#container:nth-child(2) {
+  background-color: rgba(209, 237, 209, 0.3);
+}
+#container:nth-child(3) {
+  background-color: rgba(244, 211, 211, 0.3);
+}
 
 .bg-img {
-  background-image: url("../images/AdobeStock_178658489.jpeg");
+  background-image: url("images/AdobeStock_178658489.jpeg");
   background-color: transparent;
   height: 100vh;
   background-size: cover;
@@ -25,6 +31,66 @@
   animation-play-state: running;
 }
 .bg-img::before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(20, 18, 20, 0.214);
+}
+
+.bg-img1 {
+  background-image: url("images/AdobeStock_277046896_Preview.jpeg");
+  background-color: transparent;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  filter: blur(5px);
+}
+.bg-img1.inview {
+  animation-name: kf-img-animation;
+  animation-delay: 0s;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.bg-img1::before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(20, 18, 20, 0.214);
+}
+
+.bg-img2 {
+  background-image: url("images/AdobeStock_181782900-1.jpeg");
+  background-color: transparent;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  filter: blur(5px);
+}
+.bg-img2.inview {
+  animation-name: kf-img-animation;
+  animation-delay: 0s;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.bg-img2::before {
   content: "";
   top: 0;
   left: 0;
@@ -61,6 +127,10 @@
 .animate-title.inview .char,
 .gsap-animate-title.inview .char {
   display: inline-block;
+}
+.animate-title .char,
+.gsap-animate-title .char {
+  opacity: 0;
 }
 
 .animate-title.inview .char {
