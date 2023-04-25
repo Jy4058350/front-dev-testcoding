@@ -4,8 +4,9 @@
   position: relative;
   height: 100vh;
   background-color: transparent;
-  overflow:hidden;
- margin-top: 700px;
+  overflow: hidden;
+  margin-top: 1000px;
+  margin-bottom: 500px;
 
   &:nth-child(2) {
     background-color: rgba(209, 237, 209, 0.3);
@@ -66,6 +67,30 @@
 }
 .bg-img2 {
   background-image: url("images/AdobeStock_181782900-1.jpeg");
+  background-color: transparent;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+
+  &.inview {
+    @include animation($name: kf-img-animation, $duration: 3s);
+  }
+
+  filter: blur(5px);
+
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(20, 18, 20, 0.214);
+  }
+}
+.bg-img3 {
+  background-image: url("images/AdobeStock_223264627_Preview.jpeg");
   background-color: transparent;
   height: 100vh;
   background-size: cover;
@@ -210,7 +235,6 @@
 }
 
 .index {
-  
   background-color: #151313;
   font-size: 60px;
   line-height: 50px;
