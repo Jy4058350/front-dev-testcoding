@@ -5,7 +5,7 @@
   height: 100vh;
   background-color: transparent;
   overflow:hidden;
- margin-top: 500px;
+ margin-top: 700px;
 
   &:nth-child(2) {
     background-color: rgba(209, 237, 209, 0.3);
@@ -107,7 +107,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2em;
-  color: white;
+  color: rgb(229, 173, 173);
   opacity: 0;
 
   &.inview {
