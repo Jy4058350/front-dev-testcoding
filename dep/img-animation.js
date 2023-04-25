@@ -1,7 +1,6 @@
 class PicAnimation {
   constructor(pic) {
     this.pics = document.querySelector(".pic");
-    console.log(this.pics);
   }
 
   animate() {
