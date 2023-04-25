@@ -5,8 +5,8 @@
   height: 100vh;
   background-color: transparent;
   overflow: hidden;
-  margin-top: 1000px;
-  margin-bottom: 500px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 
   &:nth-child(2) {
     background-color: rgba(209, 237, 209, 0.3);
@@ -170,34 +170,6 @@
     transform: translateY(0);
   }
 }
-// .gsap-animate-title {
-//   position: absolute;
-//   top: 60%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   font-size: 4em;
-//   color: rgb(241, 225, 236);
-//   opacity: 0;
-
-//   &.inview {
-//     opacity: 1;
-
-//     & .char {
-//       display: inline-block;
-
-//       @include animation(
-//         $name: kf-animation-chars2,
-//         $duration: 3s,
-//         $fill-mode: both
-//       );
-//       @for $i from 1 through 55 {
-//         &:nth-child(#{$i}) {
-//           animation-delay: $i * 0.03s;
-//         }
-//       }
-//     }
-//   }
-// }
 
 @keyframes kf-animation-chars2 {
   0% {
@@ -239,6 +211,18 @@
   font-size: 60px;
   line-height: 50px;
   color: #f3eeee;
+  margin: 300px;
+  margin-top: 100px;
+  padding: 70px 50px 70px 50px;
+}
+
+/*  copy scroll tutorial */
+
+
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
 }
 
 
@@ -314,6 +298,7 @@ img {
 .img-zoom {
   opacity: 0;
 
+
   .inview & {
     opacity: 1;
     transition: transform 0.3s ease;
@@ -370,6 +355,7 @@ img {
 }
 
 .bg-img-zoom {
+  background-image: url(images/AdobeStock_336729630_Preview.jpeg);
   background-image: url(images/image-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -386,5 +372,7 @@ img {
     content: '';
     padding-top: 50%;
   }
+}
+=======
 }
 
