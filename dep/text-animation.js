@@ -1,6 +1,7 @@
 class TextAnimation {
   constructor(el) {
     this.DOM = {};
+    this.DOM.el = el instanceof HTMLElement ? el : document.querySelector(el);
     if (el instanceof HTMLElement) {
       this.DOM.el = el;
     } else {
@@ -44,5 +45,3 @@ class GsapAnimation extends TextAnimation {
     console.log("fdsafdsa");
   }
 }
-
-
