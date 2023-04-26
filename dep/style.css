@@ -1,3 +1,13 @@
+.index {
+  background-color: #151313;
+  font-size: 60px;
+  line-height: 50px;
+  color: #f3eeee;
+  margin: 300px;
+  margin-top: 100px;
+  padding: 70px 50px 70px 50px;
+}
+
 #container {
   position: relative;
   height: 100vh;
@@ -384,22 +394,7 @@
   box-shadow: none;
 }
 
-.index {
-  background-color: #151313;
-  font-size: 60px;
-  line-height: 50px;
-  color: #f3eeee;
-  margin: 300px;
-  margin-top: 100px;
-  padding: 70px 50px 70px 50px;
-}
-
 /*  copy scroll tutorial */
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-}
-
 /* scroll demo copy code */
 img {
   max-width: 100%;
@@ -521,11 +516,12 @@ img {
   width: 100%;
 }
 
-.img-bg50 {
-  position: relative;
-}
-.img-bg50::before {
-  display: block;
-  content: "";
-  padding-top: 50%;
+.swiper {
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=style.css.map */

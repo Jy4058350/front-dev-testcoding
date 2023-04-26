@@ -4,52 +4,101 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="index">
-      Today's challenge was a struggle; I inserted the code into DOMContentLoaded for you and it cleared up. However, I did not fully understand class inheritance and the challenge remained.
-    </div>
-    <div id="container">
-      <div class="bg-img pic"></div>
-      <div class="animate-title">Beautiful Spring in Japan</div>
-    </div>
-    <div id="container">
-      <div class="bg-img1 pic"></div>
-      <div class="animate-title">Beautiful Summer in Japan</div>
-    </div>
-    <div id="container">
-      <div class="bg-img2 pic"></div>
-      <div class="animate-title">Beautiful Autumn in Japan</div>
-    </div>
-    <div id="container">
-      <div class="bg-img3 pic"></div>
-      <div class="animate-title">Beautiful Winter in Japan</div>
-    </div>
-    <div id="section">
-      <div class="cover-slide hover-darken">
-        <img class="img-zoom" src="images/AdobeStock_336729630_Preview.jpeg" alt="" />
+    <div id="global-container">
+      <div class="index">
+        Today's challenge was a struggle; I inserted the code into
+        DOMContentLoaded for you and it cleared up. However, I did not fully
+        understand class inheritance and the challenge remained.
       </div>
-      <div class="cover-slide hover-darken">
-        <img class="img-zoom" src="images/AdobeStock_538557443_Preview.jpeg" alt="" />
+      <div id="container">
+        <div class="bg-img pic"></div>
+        <div class="animate-title">Beautiful Spring in Japan</div>
       </div>
-      <div class="cover-slide hover-darken">
-        <img class="img-zoom" src="images/AdobeStock_581484645_Preview.jpeg" alt="" />
+      <div id="container">
+        <div class="bg-img1 pic"></div>
+        <div class="animate-title">Beautiful Summer in Japan</div>
       </div>
-      <div class="cover-slide hover-darken">
-        <img class="img-zoom" src="images/AdobeStock_583058423_Preview.jpeg" alt="" />
+      <div id="container">
+        <div class="bg-img2 pic"></div>
+        <div class="animate-title">Beautiful Autumn in Japan</div>
       </div>
-    </div>
-        <img class="img-zoom" src="images/AdobeStock_583058423_Preview.jpeg" alt="" />
+      <div id="container">
+        <div class="bg-img3 pic"></div>
+        <div class="animate-title">Beautiful Winter in Japan</div>
       </div>
-      <div class="cover-slide hover-darken">
-        <img class="img-zoom" src="images/AdobeStock_590648834_Preview.jpeg" alt="" />
+      <div id="section">
+       
+        
+       
+
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="cover-slide hover-darken">
+                <div class="hero__title">text example 1</div>
+                <img
+                  class="img-zoom"
+                  src="images/AdobeStock_336729630_Preview.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cover-slide hover-darken">
+                <div class="hero__title">text example 2</div>
+                <img
+                  class="img-zoom"
+                  src="images/AdobeStock_590648834_Preview.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cover-slide hover-darken">
+                <div class="hero__title">text example 3</div>
+                <img
+                  class="img-zoom"
+                  src="images/AdobeStock_581484645_Preview.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide"> <div class="cover-slide hover-darken">
+              <div class="hero__title">text example 4</div>
+              <img
+                class="img-zoom"
+                src="images/AdobeStock_583058423_Preview.jpeg"
+                alt=""
+              />
+            </div></div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
       </div>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../node_modules/intersection-observer/intersection-observer.js"></script>
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="../node_modules/gsap/dist/all.js"></script>
     <script src="scroll.js"></script>
     <script src="img-animation.js"></script>
@@ -58,3 +107,5 @@
     <script src="main.js"></script>
   </body>
 </html>
+intersection-observer/intersection-observer.js
+/Users/shanbianchun/.Trash/front-dev-testcoding/node_modules/intersection-observer/intersection-observer.js
