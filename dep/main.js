@@ -1,10 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
+  
   const cb = function (el, isIntersecting) {
     if (isIntersecting) {
-      el.classList.add("inview");
-      const ta = new GsapAnimation(el);
-      ta.animate();
+      // const ta = new TextAnimation(el);
+      // ta.animate();
+      // アニメーションの実行
+      // .cover-slideのアニメーション
+      el.classList.add('inview');
+      
     }
+    
   };
   const sot = new ScrollObserver(".animate-title", cb);
   const soi = new ScrollObserver(".pic", cb);

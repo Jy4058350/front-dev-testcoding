@@ -220,10 +220,10 @@
 
 
 
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-}
+// img {
+//   max-width: 100%;
+//   vertical-align: bottom;
+// }
 
 
 /* scroll demo copy code */
@@ -364,15 +364,12 @@ img {
   @extend .img-zoom;
 }
 
-.img-bg50 {
-  position: relative;
+// .img-bg50 {
+//   position: relative;
   
-  &::before {
-    display: block;
-    content: '';
-    padding-top: 50%;
-  }
-}
-
-
-
+//   &::before {
+//     display: block;
+//     content: '';
+//     padding-top: 50%;
+//   }
+// }
