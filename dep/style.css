@@ -400,6 +400,12 @@ img {
   vertical-align: bottom;
 }
 
+/* scroll demo copy code */
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
 .cover-slide {
   position: relative;
   overflow: hidden;
@@ -448,7 +454,7 @@ img {
   }
 }
 .img-zoom, .bg-img-zoom {
-  opacity: 1;
+  opacity: 0;
 }
 .inview .img-zoom, .inview .bg-img-zoom {
   opacity: 1;
@@ -508,6 +514,7 @@ img {
 
 .bg-img-zoom {
   background-image: url(images/AdobeStock_336729630_Preview.jpeg);
+  background-image: url(images/image-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -2,10 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const cb = function (el, isIntersecting) {
     if (isIntersecting) {
       el.classList.add("inview");
-      // const ta = new TextAnimation(el);
-      // ta.animate();
-      // const ia = new PicAnimation(el);
-      // ia.animate();
+      const ta = new GsapAnimation(el);
+      ta.animate();
     }
   };
   const sot = new ScrollObserver(".animate-title", cb);
